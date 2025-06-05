@@ -8,7 +8,7 @@ Welcome to **selectallfrommay**, a personal SQL playground where I explore queri
 
 | Section | Title                                                       | Status         |
 | ------- | ----------------------------------------------------------- | -------------- |
-| 1       | Introduction                                                | 🔜 Not started |
+| 1       | Introduction                                                | ✅ In progress |
 | 2       | History And Story Of Data                                   | 🔜 Not started |
 | 3       | Databases + SQL Fundamentals                                | 🔜 Not started |
 | 4       | Environment Setup                                           | 🔜 Not started |
@@ -23,3 +23,17 @@ Welcome to **selectallfrommay**, a personal SQL playground where I explore queri
 | 13      | Extras: Redis                                               | 🔜 Not started |
 | 14      | Extra Bits: Databases In A Web App (with Node.js)           | 🔜 Not started |
 | 15      | BONUS SECTION                                               | 🔜 Not started |
+
+```mermaid
+graph TD
+    A[Introduction] --> B[History of Data]
+    B --> C[SQL Fundamentals]
+    C --> D[Environment Setup]
+    D --> E[SQL Deep Dive]
+    E --> F[Advanced SQL]
+    F --> G[Database Management]
+    G --> H[Database Design]
+    H --> I[Performance & Security]
+    I --> J[Data Engineering]
+    J --> K[Extras & Web App]
+```
