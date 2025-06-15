@@ -10,8 +10,8 @@ Welcome to **selectallfrommay**, a personal SQL playground where I explore queri
 | ------- | ----------------------------------------------------------- | -------------- |
 | 1       | Introduction                                                | 2025-06-05     |
 | 2       | History And Story Of Data                                   | 2025-06-06     |
-| 3       | Databases + SQL Fundamentals                                | ✅ In progress |
-| 4       | Environment Setup                                           | 🔜 Not started |
+| 3       | Databases + SQL Fundamentals                                | 2025-06-15     |
+| 4       | Environment Setup                                           | ✅ In progress |
 | 5       | SQL Deep Dive                                               | 🔜 Not started |
 | 6       | Advanced SQL                                                | 🔜 Not started |
 | 7       | Database Management                                         | 🔜 Not started |
