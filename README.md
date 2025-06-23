@@ -11,8 +11,8 @@ Welcome to **selectallfrommay**, a personal SQL playground where I explore queri
 | 1       | Introduction                                                | 2025-06-05     |
 | 2       | History And Story Of Data                                   | 2025-06-06     |
 | 3       | Databases + SQL Fundamentals                                | 2025-06-15     |
-| 4       | Environment Setup                                           | ✅ In progress |
-| 5       | SQL Deep Dive                                               | 🔜 Not started |
+| 4       | Environment Setup                                           | 2025-06-22     |
+| 5       | SQL Deep Dive                                               | ✅ In progress |
 | 6       | Advanced SQL                                                | 🔜 Not started |
 | 7       | Database Management                                         | 🔜 Not started |
 | 8       | Solving The Mystery                                         | 🔜 Not started |
