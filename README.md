@@ -6,23 +6,23 @@ Welcome to **selectallfrommay**, a personal SQL playground where I explore queri
 
 📘 I'm following a structured SQL course and logging my progress here.
 
-| Section | Title                                                       | Status         |
-| ------- | ----------------------------------------------------------- | -------------- |
-| 1       | Introduction                                                | 2025-06-05     |
-| 2       | History And Story Of Data                                   | 2025-06-06     |
-| 3       | Databases + SQL Fundamentals                                | 2025-06-15     |
-| 4       | Environment Setup                                           | 2025-06-22     |
-| 5       | SQL Deep Dive                                               | ✅ In progress |
-| 6       | Advanced SQL                                                | 🔜 Not started |
-| 7       | Database Management                                         | 🔜 Not started |
-| 8       | Solving The Mystery                                         | 🔜 Not started |
-| 9       | Database Design                                             | 🔜 Not started |
-| 10      | Database Landscape, Performance and Security                | 🔜 Not started |
-| 11      | Where To Go From Here?                                      | 🔜 Not started |
-| 12      | Extras: Data Engineering (And the role of Machine Learning) | 🔜 Not started |
-| 13      | Extras: Redis                                               | 🔜 Not started |
-| 14      | Extra Bits: Databases In A Web App (with Node.js)           | 🔜 Not started |
-| 15      | BONUS SECTION                                               | 🔜 Not started |
+| Section | Title                                                       | Status               |
+| ------- | ----------------------------------------------------------- | -------------------- |
+| 1       | Introduction                                                | 2025-06-05           |
+| 2       | History And Story Of Data                                   | 2025-06-06           |
+| 3       | Databases + SQL Fundamentals                                | 2025-06-15           |
+| 4       | Environment Setup                                           | 2025-06-22           |
+| 5       | SQL Deep Dive                                               | ✅ Still in progress |
+| 6       | Advanced SQL                                                | 🔜 Not started       |
+| 7       | Database Management                                         | 🔜 Not started       |
+| 8       | Solving The Mystery                                         | 🔜 Not started       |
+| 9       | Database Design                                             | 🔜 Not started       |
+| 10      | Database Landscape, Performance and Security                | 🔜 Not started       |
+| 11      | Where To Go From Here?                                      | 🔜 Not started       |
+| 12      | Extras: Data Engineering (And the role of Machine Learning) | 🔜 Not started       |
+| 13      | Extras: Redis                                               | 🔜 Not started       |
+| 14      | Extra Bits: Databases In A Web App (with Node.js)           | 🔜 Not started       |
+| 15      | BONUS SECTION                                               | 🔜 Not started       |
 
 ```mermaid
 graph TD
