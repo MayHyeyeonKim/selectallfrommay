@@ -78,8 +78,7 @@ The WHERE clause is fundamental because most queries require filtering data to p
 **Simple example**
 To retrieve all female employees:
 
-```sql
-SELECT first_name
+```sqlㅍ
 FROM employees
 WHERE gender = 'F';
 ```
@@ -87,5 +86,22 @@ WHERE gender = 'F';
 **Filtering with multiple criteria**
 Multiple conditions can be combined using AND to create layered filters.
 Example: filtering employees by both age and gender.
+
+**Using NOT for negation**
+The NOT operator negates a condition, selecting rows that do not meet the specified criteria.
+Example: To retrieve all employees who are not female:
+
+```sql
+SELECT * FROM employees
+WHERE NOT gender = 'F';
+```
+
+NOT can be combined with other operators like AND and OR for complex filtering.
+Example: Employees who are not managers and not in the sales department:
+
+```sql
+SELECT * FROM employees
+WHERE NOT role = 'manager' AND NOT department = 'sales';
+```
 
 Overall, advanced filtering builds on basic WHERE usage and enables answering more complex questions.
