@@ -104,4 +104,82 @@ SELECT * FROM employees
 WHERE NOT role = 'manager' AND NOT department = 'sales';
 ```
 
+**Using NOT EQUAL TO for inequality**
+The NOT EQUAL TO operator (!= or <>) selects rows where the value does not match the specified value.
+Example: To retrieve all employees whose salary is not 50000:
+
+```sql
+SELECT * FROM employees
+WHERE salary != 50000;
+```
+
+You can also use <> instead of != for the same purpose.
+Example:
+
+```sql
+SELECT * FROM employees
+WHERE department <> 'HR';
+```
+
+**Using Greater Than for comparison**
+The Greater Than operator (>) selects rows where the value is greater than the specified value.
+Example: To retrieve all employees whose salary is greater than 50000:
+
+```sql
+SELECT * FROM employees
+WHERE salary > 50000;
+```
+
+This can be combined with other conditions for more precise filtering.
+Example: Employees with salary greater than 50000 and hired after 2020:
+
+```sql
+SELECT * FROM employees
+WHERE salary > 50000 AND hire_date > '2020-01-01';
+```
+
+Greater Than also works with strings, comparing them lexicographically (alphabetical order).
+Example: To retrieve names that come after 'abc' in alphabetical order:
+
+```sql
+SELECT * FROM employees
+WHERE name > 'abc';
+```
+
+(Note: 'abc' > 'ace' would be false since 'a' comes before 'c' in 'ace'.)
+
+**Using Greater Than or Equal To for comparison**
+The Greater Than or Equal To operator (>=) selects rows where the value is greater than or equal to the specified value.
+Example: To retrieve all employees whose salary is 50000 or more:
+
+```sql
+SELECT * FROM employees
+WHERE salary >= 50000;
+```
+
+This works with strings as well, comparing lexicographically.
+Example: Names that are 'abc' or come after it in alphabetical order:
+
+```sql
+SELECT * FROM employees
+WHERE name >= 'abc';
+```
+
+**Using Less Than or Equal To for comparison**
+The Less Than or Equal To operator (<=) selects rows where the value is less than or equal to the specified value.
+Example: To retrieve all employees whose salary is 50000 or less:
+
+```sql
+SELECT * FROM employees
+WHERE salary <= 50000;
+```
+
+This works with strings as well, comparing lexicographically.
+Example: Names that are 'abc' or come before it in alphabetical order:
+
+```sql
+SELECT * FROM employees
+WHERE name <= 'abc';
+```
+
 Overall, advanced filtering builds on basic WHERE usage and enables answering more complex questions.
