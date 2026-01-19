@@ -56,4 +56,4 @@ SQL commands are categorized into four main types based on their functionality:
 
 > For a visual representation, see the image below:
 
-![SQL Commands Diagram](./sqlCommands.png)
+![SQL Commands Diagram](./img/sqlCommands.png)
