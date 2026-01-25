@@ -12,7 +12,7 @@ Welcome to **selectallfrommay**, a personal SQL playground where I explore queri
 | 2       | History And Story Of Data                                   | 2025-06-06     |
 | 3       | Databases + SQL Fundamentals                                | 2025-06-15     |
 | 4       | Environment Setup                                           | 2025-06-22     |
-| 5       | SQL Deep Dive                                               | ✅ 46/55       |
+| 5       | SQL Deep Dive                                               | ✅ 49/55       |
 | 6       | Advanced SQL                                                | 🔜 Not started |
 | 7       | Database Management                                         | 🔜 Not started |
 | 8       | Solving The Mystery                                         | 🔜 Not started |
