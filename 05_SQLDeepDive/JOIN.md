@@ -384,19 +384,19 @@ NATURAL JOIN departments;
 - Risky as unexpected columns may be joined
 - Using explicit join conditions is recommended
 
-## JOIN 성능 최적화 팁
+## JOIN Performance Optimization Tips
 
-### 1. 인덱스 활용
+### 1. Leverage Indexes
 
-조인에 사용되는 컬럼에 인덱스를 생성하세요:
+Create indexes on columns used in joins:
 
 ```sql
 CREATE INDEX idx_dept_id ON employees(dept_id);
 ```
 
-### 2. 조건 필터링 먼저
+### 2. Filter First
 
-WHERE 조건으로 데이터를 먼저 필터링한 후 JOIN:
+Filter data with WHERE conditions before JOIN:
 
 ```sql
 SELECT e.name, d.dept_name
