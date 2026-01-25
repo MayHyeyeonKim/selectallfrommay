@@ -144,14 +144,19 @@ SELECT DAYOFYEAR(NOW());             -- 24
 
 #### PostgreSQL
 ```sql
--- Using EXTRACT
+-- Using EXTRACT (returns numeric value)
 SELECT EXTRACT(YEAR FROM NOW());     -- 2026
 SELECT EXTRACT(MONTH FROM NOW());    -- 1
 SELECT EXTRACT(DAY FROM NOW());      -- 24
 SELECT EXTRACT(HOUR FROM NOW());     -- 14
 SELECT EXTRACT(MINUTE FROM NOW());   -- 30
 
--- Using DATE_PART
+-- EXTRACT example with DATE literal
+SELECT EXTRACT(MONTH FROM DATE '1992/11/13');  -- 11
+SELECT EXTRACT(YEAR FROM DATE '1992/11/13');   -- 1992
+SELECT EXTRACT(DAY FROM DATE '1992/11/13');    -- 13
+
+-- Using DATE_PART (alternative to EXTRACT)
 SELECT DATE_PART('year', NOW());     -- 2026
 SELECT DATE_PART('month', NOW());    -- 1
 SELECT DATE_PART('day', NOW());      -- 24
@@ -162,6 +167,22 @@ SELECT EXTRACT(DOW FROM NOW());      -- Day of week (0=Sunday)
 SELECT EXTRACT(DOY FROM NOW());      -- Day of year
 SELECT EXTRACT(QUARTER FROM NOW());  -- Quarter
 SELECT EXTRACT(WEEK FROM NOW());     -- Week number
+
+-- Using DATE_TRUNC (returns date/timestamp, truncates to specified precision)
+SELECT DATE_TRUNC('year', DATE '1992-11-13');    -- 1992-01-01 (year start)
+SELECT DATE_TRUNC('month', DATE '1992-11-13');   -- 1992-11-01 (month start)
+SELECT DATE_TRUNC('week', DATE '1992-11-13');    -- 1992-11-09 (week start, Monday)
+SELECT DATE_TRUNC('day', DATE '1992-11-13');     -- 1992-11-13 (remove time)
+
+-- DATE_TRUNC with current date
+SELECT DATE_TRUNC('year', CURRENT_DATE);         -- This year's Jan 1
+SELECT DATE_TRUNC('month', CURRENT_DATE);        -- This month's 1st day
+SELECT DATE_TRUNC('week', CURRENT_DATE);         -- This week's Monday
+```
+
+**EXTRACT vs DATE_TRUNC:**
+- `EXTRACT`: Returns **number** (e.g., month = 11)
+- `DATE_TRUNC`: Returns **date** truncated to unit (e.g., month start = 1992-11-01)
 ```
 
 ### Date Arithmetic
@@ -247,6 +268,16 @@ SELECT NOW() + INTERVAL '30 minutes';                -- Add 30 minutes
 -- Combining intervals
 SELECT NOW() + INTERVAL '1 year 2 months 3 days';
 SELECT NOW() + INTERVAL '1 hour 30 minutes';
+
+-- Practical examples with WHERE clause
+SELECT * FROM orders
+WHERE purchaseDate <= NOW() - INTERVAL '30 days';    -- Orders older than 30 days
+
+SELECT * FROM orders
+WHERE purchaseDate >= NOW() - INTERVAL '30 days';    -- Orders within last 30 days
+
+SELECT * FROM events
+WHERE event_date BETWEEN NOW() AND NOW() + INTERVAL '7 days';  -- Next 7 days
 
 -- Calculate difference (returns interval)
 SELECT NOW() - '2026-01-01'::DATE;                   -- Returns interval
